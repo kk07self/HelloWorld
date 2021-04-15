@@ -1,0 +1,8 @@
+app_identifier("com.lightspace.lmk.dev") # The bundle identifier of your app
+apple_id("273106642@qq.com") # Your Apple email address
+
+itc_team_id("120111898") # App Store Connect Team ID
+team_id("5ZPQVN5FJW") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

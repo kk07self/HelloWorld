@@ -1,0 +1,1392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D6656207A03BFD6E791F18FFB24141 /* KTVHCDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 613E5845C13555830D61D7A216DA7263 /* KTVHCDataLoader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		02B6EBF6652A808AE41ED23D022BEC1A /* KTVHCRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2379C5954B3380D461848C9A4AAF2BD4 /* KTVHCRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		054029F64BFD7430B7337FC4D5DAA008 /* KTVHCDataUnitPool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A11F9CC1A92B330073B9F74FCA56A1B /* KTVHCDataUnitPool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		088176D23069912CBEC0CE101EB962C6 /* KTVHCHTTPHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A2B71FD029F0D34D9275AC7925F56722 /* KTVHCHTTPHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0BD2277B417A31A135C45AF3111DFC44 /* KTVHCHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 241AD46C71D779EE3EDAC5574DCB4B07 /* KTVHCHTTPConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0D7305696FA22F0E1C0C66A1470E0904 /* KTVHTTPCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 56663482870A71151A9DBE4DF9706408 /* KTVHTTPCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		10259787898D21B5E80678E51FE06F4D /* HTTPDynamicFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A0A2B750752368B8179F9FE1245AD73 /* HTTPDynamicFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2221D6EC47C3E9F842FA0EAD976917EC /* CFNetwork.framework */; };
+		194A081D0DD066AB4B606A7D535E4D5E /* HTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCE6053B8AF8FA4F794FA78C8633036 /* HTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		197DBD49A4494538CC2473E0C36EE17E /* KTVCocoaHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E2AE1BFA38FE1A55FAFBB5C6BC29B3 /* KTVCocoaHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CB94BE46760BB4E99450EAA657FF402 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E862FAB39DF41EB4C12D017344B4808 /* UIKit.framework */; };
+		20915EDBF4431708CA18C66D4F977934 /* KTVHCDataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6114A06C44B7458BBC48748AB2DB504E /* KTVHCDataSourceManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2133A8EA45FE3A5363DD5A560CAF6441 /* Pods-HellowWorld-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F15AA2C29462DA5ECC74469078D6F538 /* Pods-HellowWorld-dummy.m */; };
+		21965B49BFF0A76EC034AD7223F6AC70 /* KTVCocoaHTTPServer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79B8005BC682C35A26C5FEAA7BAA3D72 /* KTVCocoaHTTPServer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21B14B6866430A6E7226A2E9172963FF /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E7E1849DBEE49E9C6E28616DFC1C09 /* HTTPDynamicFileResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		272439773093B3847ED47CA7000CCCC1 /* KTVHCLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF974BF57F14A4D6FFCBD3F856733A0 /* KTVHCLog.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2757AD0F23A4DF598BCF5AB1922458DA /* KTVHCDataFileSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A4DA54EDA2DEE46091811585F253B3D0 /* KTVHCDataFileSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8E4D3F542C0A3AF34164CA61D31FE85 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7580B082BD60D4838F5C78F79FBBAF /* KTVHCDataUnit.h in Headers */ = {isa = PBXBuildFile; fileRef = A08A78779EDE17D22B690AD1149E70DC /* KTVHCDataUnit.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2EAC9719048EE1D2A2ECB8F4C41F99C9 /* KTVHCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D37DE19E2EF8E24A189D1C200B91C8F0 /* KTVHCHTTPResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2F249DE1D8C7FA2DD4C546AFA29CA017 /* HTTPFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0210F57956EF810282A9CF3BDFBCC6DF /* HTTPFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F670DAD06570984368BBACC2B3775F3 /* HTTPAuthenticationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D83453A36BBBE226F39C089E4CCB435 /* HTTPAuthenticationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3136C8EE5F45535AC581C196669D608F /* KTVHTTPCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E28E7BB0AE0E006F562B570DF67A5D5F /* KTVHTTPCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34897D3CF5ED08039CDDC00A7425BB1C /* KTVHCDataUnitItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 147D60738E15622C160EAB343121A834 /* KTVHCDataUnitItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		38047BF1BEE849A4EF7C11D15F1F2FD1 /* HTTPLogging.m in Sources */ = {isa = PBXBuildFile; fileRef = 23ED4FB2B1A215073C76E60FD5C1F666 /* HTTPLogging.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3AF8B2FA8441AFD54E97D987ED703EAF /* KTVHCDataCacheItemZone.m in Sources */ = {isa = PBXBuildFile; fileRef = B8D5CCD34020641BD8ACFE5E27E4525F /* KTVHCDataCacheItemZone.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3C5F8AFD96B04BEB560A9456169E4D76 /* MultipartMessageHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 629E61C817F5A498B77C99D653B4D88C /* MultipartMessageHeader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3D289A55303853C457D58ECD182B8352 /* HTTPMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F240646B0AF900D72ED268AED99941CB /* HTTPMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 240A0D97EBB65C13E1B57FE01A0B7AC2 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		425964E52DEFDE79DC0CA48820A2DB8C /* HTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DDA16A5F3950E587231A64C6FA6B75C /* HTTPConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4371B149000D1A2A84AB43F6BBA8630E /* KTVHCDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BDCC889F4E6D2C27914C3BBEEBE7E2E /* KTVHCDataRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		47AAC6200037F75C251F613BE7E8BE70 /* MultipartMessageHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 990AF2237EE9B89C47999CD0DD8708CC /* MultipartMessageHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F0FF5BDA202E9091C4F07C921460404 /* KTVHCDataCacheItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FAD3D80D2CD586984553AA555ECBFC4 /* KTVHCDataCacheItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4F23B48B01660DE8318E0179D2DE2157 /* KTVHCHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D577F90C0978969524FD27D6A5A6E28 /* KTVHCHTTPServer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39FAAF9BEBE71EFC4465762CAD2EEBF6 /* Security.framework */; };
+		5439CD332E2533A9B8EA98E15FF227B0 /* KTVHCDataUnitItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 043F92AE4F75B53352FBE3A7C099C92C /* KTVHCDataUnitItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B46E3BEEAD65C4976F42990C6EB774B /* Pods-HellowWorld-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C07D81C3F11BDDD831A3AB3519C5E2CE /* Pods-HellowWorld-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C99983D8280E2AE13DD93544F90D5D5 /* KTVHCHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EA24DD764A05299F68D112657AC2FD1 /* KTVHCHTTPServer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5CF38CE3EA0EC06B0ED89C9F17DF6C27 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CA49A3C35FA8AF62E5FDB1E39C2113C0 /* HTTPMessage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5E50FFA64E0A07D4FFA694267BD7182A /* KTVHCData+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D1EB82657B6C6F6887E959736FD8C1F /* KTVHCData+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5F5B41B4899551C4EA277A8A3CB09209 /* KTVHCDataUnitPool.h in Headers */ = {isa = PBXBuildFile; fileRef = 257BC838FA6695786CA54D75C203A40A /* KTVHCDataUnitPool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		613D26CC71EF72E9183B37712E19262D /* DDNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = B092A36297EC5006C4C595BEA08C03D3 /* DDNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6254A720C00353F8B8DC0DD38D1EC98A /* KTVHCDataCacheItemZone.h in Headers */ = {isa = PBXBuildFile; fileRef = B1EF106F2BEF0BF4C773BD7FA1DDBBAD /* KTVHCDataCacheItemZone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62997BC008BC1F4DF656BAABF6402280 /* WebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFDEF6F75DAB85E5786BEEAE92CEF18 /* WebSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64E9A47B44C4AD783AEDE95AB53FD1D7 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 35340C7AB8E5303BDCDC776D1A494925 /* DDNumber.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		66CE3AFF84B851F1D27889129F6D2A06 /* KTVHCDataNetworkSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B152F10FC65C03B9A67330A3547DF31 /* KTVHCDataNetworkSource.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6932BDCED472EF636631DC89586838D4 /* KTVHCDataCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AAA28961F2E16BB0D18DDD5DD64059A /* KTVHCDataCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EADE6FFD62CE219BBEAFA18C0AF7A63F /* CocoaAsyncSocket-dummy.m */; };
+		6F28BFDF97EAF5057618B139BFB27C55 /* KTVHCError.m in Sources */ = {isa = PBXBuildFile; fileRef = 62D2E610B08015D00F72D08BFF2E3ECC /* KTVHCError.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7009BC257100031E9C2A3F066FB71E75 /* MultipartFormDataParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB04CF82FA927F5370A2A69CDF9BEB1 /* MultipartFormDataParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71882C48EA2DABBF963AC4C4865B6BDB /* KTVHCDataStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = B63028D5FC1CD9F074C6E208105A27CF /* KTVHCDataStorage.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7452BC3202288FB0D62304EA02EBFEE6 /* KTVHCHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 389275A8DB6F71E8C68C76896C208451 /* KTVHCHTTPResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		749E52476C53BAF16EA42077E36D56C7 /* DDData.h in Headers */ = {isa = PBXBuildFile; fileRef = ECB059D303735C66F8F798CA8FAAC6F4 /* DDData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		754FF74E0FBDB59B440CB4B23DA11EEC /* HTTPErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DD95329E8168AC040444EAFA65A8B689 /* HTTPErrorResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		757480D8A6B8E2F521E1EF996DAC6C93 /* HTTPErrorResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 47481793A29D84AEB204772AC5CC22A9 /* HTTPErrorResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		77C50D88335FD835D6DB0ECC722F484B /* KTVHCURLTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 171FF1E7A5ABEBA8351646DF7265D24C /* KTVHCURLTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		77D67228470C5DEB87A7C8844F97337A /* KTVHCDataCacheItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F7C1EFC1C72695CCC2ABBC6BF98C740 /* KTVHCDataCacheItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7830D167022FAF998CDF150CC5013305 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3C8CD34EF62980DCA718082CBECF3B /* HTTPFileResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7ABD948B612A258AC9CDB36467E5372E /* KTVHCDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF83988B7FE3E2E5A0C81FE7C7692B2 /* KTVHCDataResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7C872BBA8FEA83C53F4725C84EBA2D68 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2902DE12386DAEAAD8274549905BC05A /* CocoaAsyncSocket.framework */; };
+		7FF5154E07BCF016D2F2300091965BB4 /* MultipartFormDataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = F89CEADCA5C4C4B5E0779023ABBA6EDA /* MultipartFormDataParser.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8266089BD0F67B38229A649E44FC5C9D /* KTVHTTPCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A4120C9FF400BF535873ECA5DD68A9C8 /* KTVHTTPCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		859B25FA98044B9C7A6476E87DF56291 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4A16C35766600E6DF90869F7FD69E8 /* HTTPServer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89A830AA9386FD4A69AD8B6CBFF932F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */; };
+		8CDB4443FD3B66593EDAF040F7E77E55 /* KTVHCDataSourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EFEEAA919661E443F0856E639A6E3A18 /* KTVHCDataSourceManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		906FE133DE41FD16A1D19F72CEF9A4A8 /* KTVHCDataUnitQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7C80D845B61AA3EC80AD3A5F6273DE /* KTVHCDataUnitQueue.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94CB0E9C1461DCDE5AF263AD6B6A7D0B /* KTVHCHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 80BF9CF18C98BAA77569A4D1C959BCCA /* KTVHCHTTPConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		96EBCC42C9BED9A39A778B847D0A6B4C /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 893A4CEC9D33E7771BACAC30E903A54D /* HTTPRedirectResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		989E929DE7DC601BBCBE7E316DDD691D /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A5D7C0F3D8F5DC5466F787F19407919 /* DDData.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		98D071657FB32154D3F8E0EFE8961DF5 /* KTVHCDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 83E25FD47640FF4542AA17B2B4E8F617 /* KTVHCDownload.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		995D31C6DFA5866E793D45DF278DF6A1 /* DDRange.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B1AF8812AB48AEF93BC27F64F5F9D55 /* DDRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99F27F32A9154EB15C99BA8781628BEA /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1161D073C6DDF3D73427A4887526AD9B /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		99FA87D2DF8B7A494B3E56B4D6985A65 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A0C515F2AD4666E40E495454F76F5BDD /* HTTPConnection.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9BCFE8744D6FB50E7B923B4A7FC22E82 /* KTVHCDataUnitQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D0EE81976C5394CF724B893B57C7592A /* KTVHCDataUnitQueue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C73C2BABE31175DFF1938102998E03B /* KTVHCURLTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 955ED3153AF40BF8DF0ED68DFEF726B9 /* KTVHCURLTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9E759C2A257DCF6510599CFC50BD3084 /* KTVHCRange.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F69C2DDDAD06E3BE25BB2A95F6D6ECC /* KTVHCRange.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A0339D2714841FA1FC530C90D6551362 /* KTVHCDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E0F4181D1B258AFD534E3D196C9B5AB /* KTVHCDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FA0F620C6C585055BC13A63CED9F0B /* KTVHCDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = D8C0D04B5FDDD0D90BBAA2C6F215F0D1 /* KTVHCDataLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A74E3DCD0C7C88E8F2A3A13510A1A098 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C6CF8CFE1841913607732F5BE10429AE /* HTTPAsyncFileResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		A88D0A7523C4F50E7DC2A1450B405A99 /* KTVHCMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1A986F62DB51995C1A2880A68891B4 /* KTVHCMacro.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC4956D57CC41EBACD2CC7BEA2D6F3D6 /* KTVHCPathTool.h in Headers */ = {isa = PBXBuildFile; fileRef = E47C6428DC2882B0CEBD51465968A844 /* KTVHCPathTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		ACCDDA869B3B799BCA004BBC35D4255F /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B21D8B5D00C92D72FFCF074DCF24CA /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AFD8CA1C6A4D26B47BFB3AEBF30A9675 /* KTVHCDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E3E205F76624AA9FD357EC9719B33EB /* KTVHCDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B1DC8B7976A2CFAF9682F2FDD6669413 /* HTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3F7953EC642A341654B93A8FF77D1D /* HTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5E62787ECF5E56F12AECBA03E0FC642 /* HTTPRedirectResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = FA5439F074FE9CB35B6B828EDF5DDB53 /* HTTPRedirectResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B61055390E9D04153FFA0BB3139C21D7 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 879AFD259AE6C0BF408841FD7655827F /* HTTPDataResponse.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		B95978A56748F2E00AE8D3EDEABB6A4B /* KTVHCLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 11C1A64B5094CC409FCA13C8CF1B3D5D /* KTVHCLog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB64056EC864CEC0681F62419229F06A /* MultipartMessageHeaderField.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3E985B1EB0F7B9EFE5F4F75E09643C /* MultipartMessageHeaderField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */; };
+		BF67AEC892B5C2F1411297838071AFF5 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B605BAE6233271482C36FD4F618A6B3D /* HTTPAuthenticationRequest.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C64E5D5D1191DE623D6FBB22FD284E24 /* KTVHTTPCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB383891C32F9ABDAC96E6B29AC623B /* KTVHTTPCache-dummy.m */; };
+		CB6DFEE4224792D74AAFB0C7A4D0D8BB /* HTTPAsyncFileResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = D128FB09C9CFB0011C585E7EB01821AC /* HTTPAsyncFileResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBB3B5C7FA4A98B606DD955B5A2D6DC0 /* KTVHCDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = F4667698B5F54EDE15477FA50B208115 /* KTVHCDataStorage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CE53C63C64041466F3EF18F276E2747E /* KTVHCDataUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8353C8BCB8895A52B73F3B72462D2FC2 /* KTVHCDataUnit.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CE5F3A237787B8378E65367C1FEC4BE8 /* KTVHCDataFileSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A9518F4D339778C165BFD24E6EDB5C3 /* KTVHCDataFileSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D102274D4E9AE721E293C40E3C97536B /* HTTPDataResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 17DF85003B347A6CC5788889204FB2C2 /* HTTPDataResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1E120EE768E030A2174DC9226499F16 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */; };
+		D8EC525486D4F2853B4BFF26C26B01A4 /* KTVHCDataNetworkSource.h in Headers */ = {isa = PBXBuildFile; fileRef = FF11CBBA62443B1D62819C0D234721E7 /* KTVHCDataNetworkSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE4DC0B1902EDCCB1DA98EBDF5BEEAE1 /* KTVHCDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF58346C33B2BB6A59BD06B684D05CC /* KTVHCDataSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = A31ED05FFA80115DDA5E5A296B8AA602 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E04FB7C4CA5AE5536DB34841A7D7DEF6 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E9F196374C91DE3281AB76F52AABF54C /* WebSocket.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E0C95D5F58754D3431EE8FBDD6620A68 /* KTVCocoaHTTPServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E754FB140BF5248753C08D70C8DFE7CA /* KTVCocoaHTTPServer.framework */; };
+		E6DA7CCEE6E50F26476B7ABE9742170F /* HTTPLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B58C85D631F3F11E31EFB6C206DF9B5 /* HTTPLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6DF60337107C09DE62776969FD5C3CE /* KTVHCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E365BA85DD6C4A67BED237A5E6358EB /* KTVHCError.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EB7D2F762567AF4274BF010BC4D82AF5 /* KTVHCPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 384EAAF7622497C5CEBA2AFA98EE5E9B /* KTVHCPathTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		EBED46238C953E808FEF4A785F33FC0C /* KTVCocoaHTTPServer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59E144EF765B50F4CDF41725B412B180 /* KTVCocoaHTTPServer-dummy.m */; };
+		EDE6E749BE62E422196320902EF45E2A /* KTVHCDownload.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A73CC76332DC336BCC814337D4E7CA /* KTVHCDownload.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EE8B02231B88AF9CE1CA9B4C320D169A /* KTVHCDataReader.h in Headers */ = {isa = PBXBuildFile; fileRef = E42C0200DAAF24B72FAE85251CA638C4 /* KTVHCDataReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFF801C57476EF7268E900D72D477C72 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = E1B5176EE80ED0C0BCAAF5B1ADC3D7B4 /* DDRange.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F3510F1469402E967A785DBA7259836E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */; };
+		FAA91B7A9A92AA10788E1A8506A594EE /* KTVHCDataReader.m in Sources */ = {isa = PBXBuildFile; fileRef = A50CA1F46F2CD8616F5519FE4B71769D /* KTVHCDataReader.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FDEC7674C9843032DA03F51FEB90154D /* MultipartMessageHeaderField.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA3E55AC1571C53C9CC1D4ED507A259 /* MultipartMessageHeaderField.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FF879150E676033776CDD6010669CC89 /* KTVHCDataCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CA92DD646787B552F6BDA9CF23E182 /* KTVHCDataCallback.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AA0F8E93E50709598C9C55F21F9EBBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105186B500AA09A533997F3D16DF7B9E;
+			remoteInfo = KTVCocoaHTTPServer;
+		};
+		5A640F158DE188C29596FA91216304E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		75BD5C92FF99EF7201D6FD1E54653001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		7F8C73CE6A4DF6A9F2FF5BE303196A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 105186B500AA09A533997F3D16DF7B9E;
+			remoteInfo = KTVCocoaHTTPServer;
+		};
+		C079D350343C9514FDCA83B3CC6201B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CA0CD098B97A1205DEA694FA044A1C2;
+			remoteInfo = KTVHTTPCache;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0210F57956EF810282A9CF3BDFBCC6DF /* HTTPFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPFileResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPFileResponse.h; sourceTree = "<group>"; };
+		03A73CC76332DC336BCC814337D4E7CA /* KTVHCDownload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDownload.h; path = KTVHTTPCache/Classes/KTVHCDownload/KTVHCDownload.h; sourceTree = "<group>"; };
+		043F92AE4F75B53352FBE3A7C099C92C /* KTVHCDataUnitItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataUnitItem.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitItem.h; sourceTree = "<group>"; };
+		0A9518F4D339778C165BFD24E6EDB5C3 /* KTVHCDataFileSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataFileSource.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataFileSource.h; sourceTree = "<group>"; };
+		0FB04CF82FA927F5370A2A69CDF9BEB1 /* MultipartFormDataParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartFormDataParser.h; path = KTVCocoaHTTPServer/Classes/Mime/MultipartFormDataParser.h; sourceTree = "<group>"; };
+		1161D073C6DDF3D73427A4887526AD9B /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		11C1A64B5094CC409FCA13C8CF1B3D5D /* KTVHCLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCLog.h; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCLog.h; sourceTree = "<group>"; };
+		147D60738E15622C160EAB343121A834 /* KTVHCDataUnitItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataUnitItem.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitItem.m; sourceTree = "<group>"; };
+		17183BD85E7F5BC97A1B55CFFE51983E /* Pods-HellowWorld-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HellowWorld-acknowledgements.markdown"; sourceTree = "<group>"; };
+		171FF1E7A5ABEBA8351646DF7265D24C /* KTVHCURLTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCURLTool.m; path = KTVHTTPCache/Classes/KTVHCTools/KTVHCURLTool.m; sourceTree = "<group>"; };
+		17DF85003B347A6CC5788889204FB2C2 /* HTTPDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPDataResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPDataResponse.h; sourceTree = "<group>"; };
+		1A11F9CC1A92B330073B9F74FCA56A1B /* KTVHCDataUnitPool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataUnitPool.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitPool.m; sourceTree = "<group>"; };
+		1B1AF8812AB48AEF93BC27F64F5F9D55 /* DDRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDRange.h; path = KTVCocoaHTTPServer/Classes/Categories/DDRange.h; sourceTree = "<group>"; };
+		1DDA16A5F3950E587231A64C6FA6B75C /* HTTPConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPConnection.h; path = KTVCocoaHTTPServer/Classes/HTTPConnection.h; sourceTree = "<group>"; };
+		1DF974BF57F14A4D6FFCBD3F856733A0 /* KTVHCLog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCLog.m; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCLog.m; sourceTree = "<group>"; };
+		1E3E205F76624AA9FD357EC9719B33EB /* KTVHCDataResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataResponse.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataResponse.h; sourceTree = "<group>"; };
+		1EA24DD764A05299F68D112657AC2FD1 /* KTVHCHTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCHTTPServer.h; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPServer.h; sourceTree = "<group>"; };
+		2221D6EC47C3E9F842FA0EAD976917EC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		2248BDDA34E7F0EF999A51AFA4D4D3E1 /* Pods-HellowWorld-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HellowWorld-frameworks.sh"; sourceTree = "<group>"; };
+		2379C5954B3380D461848C9A4AAF2BD4 /* KTVHCRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCRange.h; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCRange.h; sourceTree = "<group>"; };
+		23E7E1849DBEE49E9C6E28616DFC1C09 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPDynamicFileResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		23ED4FB2B1A215073C76E60FD5C1F666 /* HTTPLogging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPLogging.m; path = KTVCocoaHTTPServer/Classes/HTTPLogging.m; sourceTree = "<group>"; };
+		240A0D97EBB65C13E1B57FE01A0B7AC2 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		241AD46C71D779EE3EDAC5574DCB4B07 /* KTVHCHTTPConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCHTTPConnection.h; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPConnection.h; sourceTree = "<group>"; };
+		257BC838FA6695786CA54D75C203A40A /* KTVHCDataUnitPool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataUnitPool.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitPool.h; sourceTree = "<group>"; };
+		25BB7D389AA57F912B6D70E4FEB7FE16 /* KTVHTTPCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTVHTTPCache.framework; path = KTVHTTPCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		267BBDDB447252CCE9BF1FD34AB5ED09 /* KTVCocoaHTTPServer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTVCocoaHTTPServer.modulemap; sourceTree = "<group>"; };
+		2902DE12386DAEAAD8274549905BC05A /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A0A2B750752368B8179F9FE1245AD73 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPDynamicFileResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		35340C7AB8E5303BDCDC776D1A494925 /* DDNumber.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDNumber.m; path = KTVCocoaHTTPServer/Classes/Categories/DDNumber.m; sourceTree = "<group>"; };
+		384EAAF7622497C5CEBA2AFA98EE5E9B /* KTVHCPathTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCPathTool.m; path = KTVHTTPCache/Classes/KTVHCTools/KTVHCPathTool.m; sourceTree = "<group>"; };
+		3886CC428E07244C20934E0E94B9C02A /* KTVHTTPCache.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTVHTTPCache.release.xcconfig; sourceTree = "<group>"; };
+		389275A8DB6F71E8C68C76896C208451 /* KTVHCHTTPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCHTTPResponse.h; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPResponse.h; sourceTree = "<group>"; };
+		3948520C0A0E82F39714F153B6773401 /* KTVCocoaHTTPServer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KTVCocoaHTTPServer-Info.plist"; sourceTree = "<group>"; };
+		39FAAF9BEBE71EFC4465762CAD2EEBF6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		3B3E985B1EB0F7B9EFE5F4F75E09643C /* MultipartMessageHeaderField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartMessageHeaderField.h; path = KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeaderField.h; sourceTree = "<group>"; };
+		3C802F1EAAD986CAB996B657BF8CF7E1 /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		3D83453A36BBBE226F39C089E4CCB435 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPAuthenticationRequest.h; path = KTVCocoaHTTPServer/Classes/HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		3E365BA85DD6C4A67BED237A5E6358EB /* KTVHCError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCError.h; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCError.h; sourceTree = "<group>"; };
+		3E862FAB39DF41EB4C12D017344B4808 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F69C2DDDAD06E3BE25BB2A95F6D6ECC /* KTVHCRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCRange.m; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCRange.m; sourceTree = "<group>"; };
+		47481793A29D84AEB204772AC5CC22A9 /* HTTPErrorResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPErrorResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPErrorResponse.h; sourceTree = "<group>"; };
+		4A5D7C0F3D8F5DC5466F787F19407919 /* DDData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDData.m; path = KTVCocoaHTTPServer/Classes/Categories/DDData.m; sourceTree = "<group>"; };
+		4DB6C19FE0DD664F9FB4D49E2068974E /* KTVCocoaHTTPServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTVCocoaHTTPServer.debug.xcconfig; sourceTree = "<group>"; };
+		4F7C1EFC1C72695CCC2ABBC6BF98C740 /* KTVHCDataCacheItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataCacheItem.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItem.h; sourceTree = "<group>"; };
+		56663482870A71151A9DBE4DF9706408 /* KTVHTTPCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHTTPCache.m; path = KTVHTTPCache/KTVHTTPCache.m; sourceTree = "<group>"; };
+		56A1E5CD0A9E0017839C4C79B740876A /* KTVCocoaHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTVCocoaHTTPServer.framework; path = KTVCocoaHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E144EF765B50F4CDF41725B412B180 /* KTVCocoaHTTPServer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTVCocoaHTTPServer-dummy.m"; sourceTree = "<group>"; };
+		59E36A69748564FE2E96EA207769212F /* KTVHTTPCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTVHTTPCache.modulemap; sourceTree = "<group>"; };
+		5ACF42F9AEDFAE565E25AD4F7F8F566F /* KTVCocoaHTTPServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTVCocoaHTTPServer.release.xcconfig; sourceTree = "<group>"; };
+		5C1A986F62DB51995C1A2880A68891B4 /* KTVHCMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCMacro.h; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCMacro.h; sourceTree = "<group>"; };
+		6114A06C44B7458BBC48748AB2DB504E /* KTVHCDataSourceManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataSourceManager.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSourceManager.m; sourceTree = "<group>"; };
+		613E5845C13555830D61D7A216DA7263 /* KTVHCDataLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataLoader.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataLoader.m; sourceTree = "<group>"; };
+		629E61C817F5A498B77C99D653B4D88C /* MultipartMessageHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartMessageHeader.m; path = KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeader.m; sourceTree = "<group>"; };
+		62D2E610B08015D00F72D08BFF2E3ECC /* KTVHCError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCError.m; path = KTVHTTPCache/Classes/KTVHCCommon/KTVHCError.m; sourceTree = "<group>"; };
+		6368FE02605D481C08F3745FD88E49BF /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		6822F5C862C6209BCAC8CA238B2555E3 /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		6BDCC889F4E6D2C27914C3BBEEBE7E2E /* KTVHCDataRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataRequest.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataRequest.m; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D1EB82657B6C6F6887E959736FD8C1F /* KTVHCData+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "KTVHCData+Internal.h"; path = "KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCData+Internal.h"; sourceTree = "<group>"; };
+		6FAD3D80D2CD586984553AA555ECBFC4 /* KTVHCDataCacheItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataCacheItem.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItem.m; sourceTree = "<group>"; };
+		74E2AE1BFA38FE1A55FAFBB5C6BC29B3 /* KTVCocoaHTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVCocoaHTTPServer.h; path = KTVCocoaHTTPServer/KTVCocoaHTTPServer.h; sourceTree = "<group>"; };
+		79B8005BC682C35A26C5FEAA7BAA3D72 /* KTVCocoaHTTPServer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTVCocoaHTTPServer-umbrella.h"; sourceTree = "<group>"; };
+		7B152F10FC65C03B9A67330A3547DF31 /* KTVHCDataNetworkSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataNetworkSource.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataNetworkSource.m; sourceTree = "<group>"; };
+		7D577F90C0978969524FD27D6A5A6E28 /* KTVHCHTTPServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCHTTPServer.m; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPServer.m; sourceTree = "<group>"; };
+		7EC32A0B40392D039FCF0AAFBA4152F8 /* KTVHTTPCache.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTVHTTPCache.debug.xcconfig; sourceTree = "<group>"; };
+		80BF9CF18C98BAA77569A4D1C959BCCA /* KTVHCHTTPConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCHTTPConnection.m; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPConnection.m; sourceTree = "<group>"; };
+		822D2A2ABF6554948D3E307573912D10 /* KTVCocoaHTTPServer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTVCocoaHTTPServer-prefix.pch"; sourceTree = "<group>"; };
+		8353C8BCB8895A52B73F3B72462D2FC2 /* KTVHCDataUnit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataUnit.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnit.m; sourceTree = "<group>"; };
+		83E25FD47640FF4542AA17B2B4E8F617 /* KTVHCDownload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDownload.m; path = KTVHTTPCache/Classes/KTVHCDownload/KTVHCDownload.m; sourceTree = "<group>"; };
+		879AFD259AE6C0BF408841FD7655827F /* HTTPDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPDataResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPDataResponse.m; sourceTree = "<group>"; };
+		893A4CEC9D33E7771BACAC30E903A54D /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPRedirectResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		8B58C85D631F3F11E31EFB6C206DF9B5 /* HTTPLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPLogging.h; path = KTVCocoaHTTPServer/Classes/HTTPLogging.h; sourceTree = "<group>"; };
+		8E3F7953EC642A341654B93A8FF77D1D /* HTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPServer.h; path = KTVCocoaHTTPServer/Classes/HTTPServer.h; sourceTree = "<group>"; };
+		8FCE6053B8AF8FA4F794FA78C8633036 /* HTTPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPResponse.h; path = KTVCocoaHTTPServer/Classes/HTTPResponse.h; sourceTree = "<group>"; };
+		955ED3153AF40BF8DF0ED68DFEF726B9 /* KTVHCURLTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCURLTool.h; path = KTVHTTPCache/Classes/KTVHCTools/KTVHCURLTool.h; sourceTree = "<group>"; };
+		990AF2237EE9B89C47999CD0DD8708CC /* MultipartMessageHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MultipartMessageHeader.h; path = KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeader.h; sourceTree = "<group>"; };
+		9AAA28961F2E16BB0D18DDD5DD64059A /* KTVHCDataCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataCallback.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCallback.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF58346C33B2BB6A59BD06B684D05CC /* KTVHCDataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataSource.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSource.h; sourceTree = "<group>"; };
+		9E0F4181D1B258AFD534E3D196C9B5AB /* KTVHCDataRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataRequest.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataRequest.h; sourceTree = "<group>"; };
+		9E4A16C35766600E6DF90869F7FD69E8 /* HTTPServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPServer.m; path = KTVCocoaHTTPServer/Classes/HTTPServer.m; sourceTree = "<group>"; };
+		A08A78779EDE17D22B690AD1149E70DC /* KTVHCDataUnit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataUnit.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnit.h; sourceTree = "<group>"; };
+		A0C515F2AD4666E40E495454F76F5BDD /* HTTPConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPConnection.m; path = KTVCocoaHTTPServer/Classes/HTTPConnection.m; sourceTree = "<group>"; };
+		A2B71FD029F0D34D9275AC7925F56722 /* KTVHCHTTPHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCHTTPHeader.h; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPHeader.h; sourceTree = "<group>"; };
+		A31ED05FFA80115DDA5E5A296B8AA602 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A4120C9FF400BF535873ECA5DD68A9C8 /* KTVHTTPCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHTTPCache.h; path = KTVHTTPCache/KTVHTTPCache.h; sourceTree = "<group>"; };
+		A4DA54EDA2DEE46091811585F253B3D0 /* KTVHCDataFileSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataFileSource.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataFileSource.m; sourceTree = "<group>"; };
+		A50CA1F46F2CD8616F5519FE4B71769D /* KTVHCDataReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataReader.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataReader.m; sourceTree = "<group>"; };
+		AAF83988B7FE3E2E5A0C81FE7C7692B2 /* KTVHCDataResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataResponse.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataResponse.m; sourceTree = "<group>"; };
+		AF0FF9C142A8A6AF20A8BCF98220E79F /* KTVHTTPCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KTVHTTPCache-Info.plist"; sourceTree = "<group>"; };
+		B092A36297EC5006C4C595BEA08C03D3 /* DDNumber.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDNumber.h; path = KTVCocoaHTTPServer/Classes/Categories/DDNumber.h; sourceTree = "<group>"; };
+		B1EF106F2BEF0BF4C773BD7FA1DDBBAD /* KTVHCDataCacheItemZone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataCacheItemZone.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItemZone.h; sourceTree = "<group>"; };
+		B2CAF721E68F5BF33F8C9B9A5340249D /* KTVHTTPCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTVHTTPCache-prefix.pch"; sourceTree = "<group>"; };
+		B605BAE6233271482C36FD4F618A6B3D /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPAuthenticationRequest.m; path = KTVCocoaHTTPServer/Classes/HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		B63028D5FC1CD9F074C6E208105A27CF /* KTVHCDataStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataStorage.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataStorage.h; sourceTree = "<group>"; };
+		B8D5CCD34020641BD8ACFE5E27E4525F /* KTVHCDataCacheItemZone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataCacheItemZone.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItemZone.m; sourceTree = "<group>"; };
+		B9DB080AF4F15F69391B025DFAC37862 /* Pods-HellowWorld-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HellowWorld-Info.plist"; sourceTree = "<group>"; };
+		BD1434798FB6C3E2E0D0CFACF0132D3F /* Pods-HellowWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HellowWorld.release.xcconfig"; sourceTree = "<group>"; };
+		BD3C8CD34EF62980DCA718082CBECF3B /* HTTPFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPFileResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPFileResponse.m; sourceTree = "<group>"; };
+		C07D81C3F11BDDD831A3AB3519C5E2CE /* Pods-HellowWorld-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HellowWorld-umbrella.h"; sourceTree = "<group>"; };
+		C6B21D8B5D00C92D72FFCF074DCF24CA /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		C6CF8CFE1841913607732F5BE10429AE /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPAsyncFileResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		CA49A3C35FA8AF62E5FDB1E39C2113C0 /* HTTPMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPMessage.m; path = KTVCocoaHTTPServer/Classes/HTTPMessage.m; sourceTree = "<group>"; };
+		CAFDEF6F75DAB85E5786BEEAE92CEF18 /* WebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebSocket.h; path = KTVCocoaHTTPServer/Classes/WebSocket.h; sourceTree = "<group>"; };
+		CDA3E55AC1571C53C9CC1D4ED507A259 /* MultipartMessageHeaderField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartMessageHeaderField.m; path = KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeaderField.m; sourceTree = "<group>"; };
+		CEB383891C32F9ABDAC96E6B29AC623B /* KTVHTTPCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTVHTTPCache-dummy.m"; sourceTree = "<group>"; };
+		CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CF7C80D845B61AA3EC80AD3A5F6273DE /* KTVHCDataUnitQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataUnitQueue.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitQueue.m; sourceTree = "<group>"; };
+		CFDE8341FC619F6CECE3A948283EED58 /* Pods-HellowWorld.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HellowWorld.modulemap"; sourceTree = "<group>"; };
+		D0EE81976C5394CF724B893B57C7592A /* KTVHCDataUnitQueue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataUnitQueue.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataUnitQueue.h; sourceTree = "<group>"; };
+		D128FB09C9CFB0011C585E7EB01821AC /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPAsyncFileResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		D37DE19E2EF8E24A189D1C200B91C8F0 /* KTVHCHTTPResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCHTTPResponse.m; path = KTVHTTPCache/Classes/KTVHCHTTPServer/KTVHCHTTPResponse.m; sourceTree = "<group>"; };
+		D8C0D04B5FDDD0D90BBAA2C6F215F0D1 /* KTVHCDataLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataLoader.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataLoader.h; sourceTree = "<group>"; };
+		DD95329E8168AC040444EAFA65A8B689 /* HTTPErrorResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HTTPErrorResponse.m; path = KTVCocoaHTTPServer/Classes/Responses/HTTPErrorResponse.m; sourceTree = "<group>"; };
+		E1B5176EE80ED0C0BCAAF5B1ADC3D7B4 /* DDRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DDRange.m; path = KTVCocoaHTTPServer/Classes/Categories/DDRange.m; sourceTree = "<group>"; };
+		E28E7BB0AE0E006F562B570DF67A5D5F /* KTVHTTPCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTVHTTPCache-umbrella.h"; sourceTree = "<group>"; };
+		E42C0200DAAF24B72FAE85251CA638C4 /* KTVHCDataReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataReader.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataReader.h; sourceTree = "<group>"; };
+		E47C6428DC2882B0CEBD51465968A844 /* KTVHCPathTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCPathTool.h; path = KTVHTTPCache/Classes/KTVHCTools/KTVHCPathTool.h; sourceTree = "<group>"; };
+		E4CA92DD646787B552F6BDA9CF23E182 /* KTVHCDataCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataCallback.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCallback.m; sourceTree = "<group>"; };
+		E754FB140BF5248753C08D70C8DFE7CA /* KTVCocoaHTTPServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTVCocoaHTTPServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F196374C91DE3281AB76F52AABF54C /* WebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = WebSocket.m; path = KTVCocoaHTTPServer/Classes/WebSocket.m; sourceTree = "<group>"; };
+		EADE6FFD62CE219BBEAFA18C0AF7A63F /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		ECB059D303735C66F8F798CA8FAAC6F4 /* DDData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DDData.h; path = KTVCocoaHTTPServer/Classes/Categories/DDData.h; sourceTree = "<group>"; };
+		EF16D949D6DAA07F83956F1A606F911B /* Pods-HellowWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HellowWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		EFEEAA919661E443F0856E639A6E3A18 /* KTVHCDataSourceManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataSourceManager.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataSourceManager.h; sourceTree = "<group>"; };
+		F09E7A2D4F8C630013E59EBCDC86E792 /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		F15AA2C29462DA5ECC74469078D6F538 /* Pods-HellowWorld-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HellowWorld-dummy.m"; sourceTree = "<group>"; };
+		F240646B0AF900D72ED268AED99941CB /* HTTPMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPMessage.h; path = KTVCocoaHTTPServer/Classes/HTTPMessage.h; sourceTree = "<group>"; };
+		F4667698B5F54EDE15477FA50B208115 /* KTVHCDataStorage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTVHCDataStorage.m; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataStorage.m; sourceTree = "<group>"; };
+		F6E4E80F9355FC5E970E63425952F012 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		F89CEADCA5C4C4B5E0779023ABBA6EDA /* MultipartFormDataParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MultipartFormDataParser.m; path = KTVCocoaHTTPServer/Classes/Mime/MultipartFormDataParser.m; sourceTree = "<group>"; };
+		F8E4D3F542C0A3AF34164CA61D31FE85 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		FA5439F074FE9CB35B6B828EDF5DDB53 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HTTPRedirectResponse.h; path = KTVCocoaHTTPServer/Classes/Responses/HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		FBA57F8FDEFF6671B141406F4431C7D7 /* Pods-HellowWorld-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HellowWorld-acknowledgements.plist"; sourceTree = "<group>"; };
+		FC083B133AC65D37B5CDF76C32DF209A /* Pods_HellowWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HellowWorld.framework; path = "Pods-HellowWorld.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF11CBBA62443B1D62819C0D234721E7 /* KTVHCDataNetworkSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTVHCDataNetworkSource.h; path = KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataNetworkSource.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		159B78ACAFC4C9E7DB00193E1715E793 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1E120EE768E030A2174DC9226499F16 /* Foundation.framework in Frameworks */,
+				E0C95D5F58754D3431EE8FBDD6620A68 /* KTVCocoaHTTPServer.framework in Frameworks */,
+				1CB94BE46760BB4E99450EAA657FF402 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19125FFED6290E5732C552A098C20D39 /* CFNetwork.framework in Frameworks */,
+				BD144AD138283B3B48934DF2DB66A77E /* Foundation.framework in Frameworks */,
+				501119DC0CF2877F95F7B9D75CA39F90 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87026C89861C0427DAE3B962310A156D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89A830AA9386FD4A69AD8B6CBFF932F9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E38471EDD2C8303A904A0B445B3E632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C872BBA8FEA83C53F4725C84EBA2D68 /* CocoaAsyncSocket.framework in Frameworks */,
+				F3510F1469402E967A785DBA7259836E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C892EF1507FDF61368CD041DCB067F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				267BBDDB447252CCE9BF1FD34AB5ED09 /* KTVCocoaHTTPServer.modulemap */,
+				59E144EF765B50F4CDF41725B412B180 /* KTVCocoaHTTPServer-dummy.m */,
+				3948520C0A0E82F39714F153B6773401 /* KTVCocoaHTTPServer-Info.plist */,
+				822D2A2ABF6554948D3E307573912D10 /* KTVCocoaHTTPServer-prefix.pch */,
+				79B8005BC682C35A26C5FEAA7BAA3D72 /* KTVCocoaHTTPServer-umbrella.h */,
+				4DB6C19FE0DD664F9FB4D49E2068974E /* KTVCocoaHTTPServer.debug.xcconfig */,
+				5ACF42F9AEDFAE565E25AD4F7F8F566F /* KTVCocoaHTTPServer.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KTVCocoaHTTPServer";
+			sourceTree = "<group>";
+		};
+		3DD52E2A4C8A14479475AB79C8764EAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				56A1E5CD0A9E0017839C4C79B740876A /* KTVCocoaHTTPServer.framework */,
+				25BB7D389AA57F912B6D70E4FEB7FE16 /* KTVHTTPCache.framework */,
+				FC083B133AC65D37B5CDF76C32DF209A /* Pods_HellowWorld.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F259939E0BC863A61D4F0FCACBD50D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6368FE02605D481C08F3745FD88E49BF /* CocoaAsyncSocket.modulemap */,
+				EADE6FFD62CE219BBEAFA18C0AF7A63F /* CocoaAsyncSocket-dummy.m */,
+				3C802F1EAAD986CAB996B657BF8CF7E1 /* CocoaAsyncSocket-Info.plist */,
+				F6E4E80F9355FC5E970E63425952F012 /* CocoaAsyncSocket-prefix.pch */,
+				F8E4D3F542C0A3AF34164CA61D31FE85 /* CocoaAsyncSocket-umbrella.h */,
+				F09E7A2D4F8C630013E59EBCDC86E792 /* CocoaAsyncSocket.debug.xcconfig */,
+				6822F5C862C6209BCAC8CA238B2555E3 /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		5E236681C3439C8EAF00468369DE2053 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2902DE12386DAEAAD8274549905BC05A /* CocoaAsyncSocket.framework */,
+				E754FB140BF5248753C08D70C8DFE7CA /* KTVCocoaHTTPServer.framework */,
+				BEBAA1AED4A8544BD1E140680932C154 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		699AE13B58319BDA40C7EE93961CABC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				59E36A69748564FE2E96EA207769212F /* KTVHTTPCache.modulemap */,
+				CEB383891C32F9ABDAC96E6B29AC623B /* KTVHTTPCache-dummy.m */,
+				AF0FF9C142A8A6AF20A8BCF98220E79F /* KTVHTTPCache-Info.plist */,
+				B2CAF721E68F5BF33F8C9B9A5340249D /* KTVHTTPCache-prefix.pch */,
+				E28E7BB0AE0E006F562B570DF67A5D5F /* KTVHTTPCache-umbrella.h */,
+				7EC32A0B40392D039FCF0AAFBA4152F8 /* KTVHTTPCache.debug.xcconfig */,
+				3886CC428E07244C20934E0E94B9C02A /* KTVHTTPCache.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KTVHTTPCache";
+			sourceTree = "<group>";
+		};
+		872956CC50BF244BF306E966477DEE4E /* Pods-HellowWorld */ = {
+			isa = PBXGroup;
+			children = (
+				CFDE8341FC619F6CECE3A948283EED58 /* Pods-HellowWorld.modulemap */,
+				17183BD85E7F5BC97A1B55CFFE51983E /* Pods-HellowWorld-acknowledgements.markdown */,
+				FBA57F8FDEFF6671B141406F4431C7D7 /* Pods-HellowWorld-acknowledgements.plist */,
+				F15AA2C29462DA5ECC74469078D6F538 /* Pods-HellowWorld-dummy.m */,
+				2248BDDA34E7F0EF999A51AFA4D4D3E1 /* Pods-HellowWorld-frameworks.sh */,
+				B9DB080AF4F15F69391B025DFAC37862 /* Pods-HellowWorld-Info.plist */,
+				C07D81C3F11BDDD831A3AB3519C5E2CE /* Pods-HellowWorld-umbrella.h */,
+				EF16D949D6DAA07F83956F1A606F911B /* Pods-HellowWorld.debug.xcconfig */,
+				BD1434798FB6C3E2E0D0CFACF0132D3F /* Pods-HellowWorld.release.xcconfig */,
+			);
+			name = "Pods-HellowWorld";
+			path = "Target Support Files/Pods-HellowWorld";
+			sourceTree = "<group>";
+		};
+		9672332C7093B87F2B85D7F793E0B844 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A31ED05FFA80115DDA5E5A296B8AA602 /* GCDAsyncSocket.h */,
+				C6B21D8B5D00C92D72FFCF074DCF24CA /* GCDAsyncSocket.m */,
+				240A0D97EBB65C13E1B57FE01A0B7AC2 /* GCDAsyncUdpSocket.h */,
+				1161D073C6DDF3D73427A4887526AD9B /* GCDAsyncUdpSocket.m */,
+				3F259939E0BC863A61D4F0FCACBD50D5 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		A25F372AD42BD1AD3C99000B13F4DF54 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				872956CC50BF244BF306E966477DEE4E /* Pods-HellowWorld */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ADB87F1FD4037F1A482F928929DDAF50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9672332C7093B87F2B85D7F793E0B844 /* CocoaAsyncSocket */,
+				E20E66A113B8F53177889C48DE7DD209 /* KTVCocoaHTTPServer */,
+				E9E21E2FD50A4006CBE08CC2AA098573 /* KTVHTTPCache */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEBAA1AED4A8544BD1E140680932C154 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2221D6EC47C3E9F842FA0EAD976917EC /* CFNetwork.framework */,
+				CEC290548173B2473A7B56BEDDE3BDEE /* Foundation.framework */,
+				39FAAF9BEBE71EFC4465762CAD2EEBF6 /* Security.framework */,
+				3E862FAB39DF41EB4C12D017344B4808 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5E236681C3439C8EAF00468369DE2053 /* Frameworks */,
+				ADB87F1FD4037F1A482F928929DDAF50 /* Pods */,
+				3DD52E2A4C8A14479475AB79C8764EAD /* Products */,
+				A25F372AD42BD1AD3C99000B13F4DF54 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E20E66A113B8F53177889C48DE7DD209 /* KTVCocoaHTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				ECB059D303735C66F8F798CA8FAAC6F4 /* DDData.h */,
+				4A5D7C0F3D8F5DC5466F787F19407919 /* DDData.m */,
+				B092A36297EC5006C4C595BEA08C03D3 /* DDNumber.h */,
+				35340C7AB8E5303BDCDC776D1A494925 /* DDNumber.m */,
+				1B1AF8812AB48AEF93BC27F64F5F9D55 /* DDRange.h */,
+				E1B5176EE80ED0C0BCAAF5B1ADC3D7B4 /* DDRange.m */,
+				D128FB09C9CFB0011C585E7EB01821AC /* HTTPAsyncFileResponse.h */,
+				C6CF8CFE1841913607732F5BE10429AE /* HTTPAsyncFileResponse.m */,
+				3D83453A36BBBE226F39C089E4CCB435 /* HTTPAuthenticationRequest.h */,
+				B605BAE6233271482C36FD4F618A6B3D /* HTTPAuthenticationRequest.m */,
+				1DDA16A5F3950E587231A64C6FA6B75C /* HTTPConnection.h */,
+				A0C515F2AD4666E40E495454F76F5BDD /* HTTPConnection.m */,
+				17DF85003B347A6CC5788889204FB2C2 /* HTTPDataResponse.h */,
+				879AFD259AE6C0BF408841FD7655827F /* HTTPDataResponse.m */,
+				2A0A2B750752368B8179F9FE1245AD73 /* HTTPDynamicFileResponse.h */,
+				23E7E1849DBEE49E9C6E28616DFC1C09 /* HTTPDynamicFileResponse.m */,
+				47481793A29D84AEB204772AC5CC22A9 /* HTTPErrorResponse.h */,
+				DD95329E8168AC040444EAFA65A8B689 /* HTTPErrorResponse.m */,
+				0210F57956EF810282A9CF3BDFBCC6DF /* HTTPFileResponse.h */,
+				BD3C8CD34EF62980DCA718082CBECF3B /* HTTPFileResponse.m */,
+				8B58C85D631F3F11E31EFB6C206DF9B5 /* HTTPLogging.h */,
+				23ED4FB2B1A215073C76E60FD5C1F666 /* HTTPLogging.m */,
+				F240646B0AF900D72ED268AED99941CB /* HTTPMessage.h */,
+				CA49A3C35FA8AF62E5FDB1E39C2113C0 /* HTTPMessage.m */,
+				FA5439F074FE9CB35B6B828EDF5DDB53 /* HTTPRedirectResponse.h */,
+				893A4CEC9D33E7771BACAC30E903A54D /* HTTPRedirectResponse.m */,
+				8FCE6053B8AF8FA4F794FA78C8633036 /* HTTPResponse.h */,
+				8E3F7953EC642A341654B93A8FF77D1D /* HTTPServer.h */,
+				9E4A16C35766600E6DF90869F7FD69E8 /* HTTPServer.m */,
+				74E2AE1BFA38FE1A55FAFBB5C6BC29B3 /* KTVCocoaHTTPServer.h */,
+				0FB04CF82FA927F5370A2A69CDF9BEB1 /* MultipartFormDataParser.h */,
+				F89CEADCA5C4C4B5E0779023ABBA6EDA /* MultipartFormDataParser.m */,
+				990AF2237EE9B89C47999CD0DD8708CC /* MultipartMessageHeader.h */,
+				629E61C817F5A498B77C99D653B4D88C /* MultipartMessageHeader.m */,
+				3B3E985B1EB0F7B9EFE5F4F75E09643C /* MultipartMessageHeaderField.h */,
+				CDA3E55AC1571C53C9CC1D4ED507A259 /* MultipartMessageHeaderField.m */,
+				CAFDEF6F75DAB85E5786BEEAE92CEF18 /* WebSocket.h */,
+				E9F196374C91DE3281AB76F52AABF54C /* WebSocket.m */,
+				04C892EF1507FDF61368CD041DCB067F /* Support Files */,
+			);
+			name = KTVCocoaHTTPServer;
+			path = KTVCocoaHTTPServer;
+			sourceTree = "<group>";
+		};
+		E9E21E2FD50A4006CBE08CC2AA098573 /* KTVHTTPCache */ = {
+			isa = PBXGroup;
+			children = (
+				6D1EB82657B6C6F6887E959736FD8C1F /* KTVHCData+Internal.h */,
+				4F7C1EFC1C72695CCC2ABBC6BF98C740 /* KTVHCDataCacheItem.h */,
+				6FAD3D80D2CD586984553AA555ECBFC4 /* KTVHCDataCacheItem.m */,
+				B1EF106F2BEF0BF4C773BD7FA1DDBBAD /* KTVHCDataCacheItemZone.h */,
+				B8D5CCD34020641BD8ACFE5E27E4525F /* KTVHCDataCacheItemZone.m */,
+				9AAA28961F2E16BB0D18DDD5DD64059A /* KTVHCDataCallback.h */,
+				E4CA92DD646787B552F6BDA9CF23E182 /* KTVHCDataCallback.m */,
+				0A9518F4D339778C165BFD24E6EDB5C3 /* KTVHCDataFileSource.h */,
+				A4DA54EDA2DEE46091811585F253B3D0 /* KTVHCDataFileSource.m */,
+				D8C0D04B5FDDD0D90BBAA2C6F215F0D1 /* KTVHCDataLoader.h */,
+				613E5845C13555830D61D7A216DA7263 /* KTVHCDataLoader.m */,
+				FF11CBBA62443B1D62819C0D234721E7 /* KTVHCDataNetworkSource.h */,
+				7B152F10FC65C03B9A67330A3547DF31 /* KTVHCDataNetworkSource.m */,
+				E42C0200DAAF24B72FAE85251CA638C4 /* KTVHCDataReader.h */,
+				A50CA1F46F2CD8616F5519FE4B71769D /* KTVHCDataReader.m */,
+				9E0F4181D1B258AFD534E3D196C9B5AB /* KTVHCDataRequest.h */,
+				6BDCC889F4E6D2C27914C3BBEEBE7E2E /* KTVHCDataRequest.m */,
+				1E3E205F76624AA9FD357EC9719B33EB /* KTVHCDataResponse.h */,
+				AAF83988B7FE3E2E5A0C81FE7C7692B2 /* KTVHCDataResponse.m */,
+				9DF58346C33B2BB6A59BD06B684D05CC /* KTVHCDataSource.h */,
+				EFEEAA919661E443F0856E639A6E3A18 /* KTVHCDataSourceManager.h */,
+				6114A06C44B7458BBC48748AB2DB504E /* KTVHCDataSourceManager.m */,
+				B63028D5FC1CD9F074C6E208105A27CF /* KTVHCDataStorage.h */,
+				F4667698B5F54EDE15477FA50B208115 /* KTVHCDataStorage.m */,
+				A08A78779EDE17D22B690AD1149E70DC /* KTVHCDataUnit.h */,
+				8353C8BCB8895A52B73F3B72462D2FC2 /* KTVHCDataUnit.m */,
+				043F92AE4F75B53352FBE3A7C099C92C /* KTVHCDataUnitItem.h */,
+				147D60738E15622C160EAB343121A834 /* KTVHCDataUnitItem.m */,
+				257BC838FA6695786CA54D75C203A40A /* KTVHCDataUnitPool.h */,
+				1A11F9CC1A92B330073B9F74FCA56A1B /* KTVHCDataUnitPool.m */,
+				D0EE81976C5394CF724B893B57C7592A /* KTVHCDataUnitQueue.h */,
+				CF7C80D845B61AA3EC80AD3A5F6273DE /* KTVHCDataUnitQueue.m */,
+				03A73CC76332DC336BCC814337D4E7CA /* KTVHCDownload.h */,
+				83E25FD47640FF4542AA17B2B4E8F617 /* KTVHCDownload.m */,
+				3E365BA85DD6C4A67BED237A5E6358EB /* KTVHCError.h */,
+				62D2E610B08015D00F72D08BFF2E3ECC /* KTVHCError.m */,
+				241AD46C71D779EE3EDAC5574DCB4B07 /* KTVHCHTTPConnection.h */,
+				80BF9CF18C98BAA77569A4D1C959BCCA /* KTVHCHTTPConnection.m */,
+				A2B71FD029F0D34D9275AC7925F56722 /* KTVHCHTTPHeader.h */,
+				389275A8DB6F71E8C68C76896C208451 /* KTVHCHTTPResponse.h */,
+				D37DE19E2EF8E24A189D1C200B91C8F0 /* KTVHCHTTPResponse.m */,
+				1EA24DD764A05299F68D112657AC2FD1 /* KTVHCHTTPServer.h */,
+				7D577F90C0978969524FD27D6A5A6E28 /* KTVHCHTTPServer.m */,
+				11C1A64B5094CC409FCA13C8CF1B3D5D /* KTVHCLog.h */,
+				1DF974BF57F14A4D6FFCBD3F856733A0 /* KTVHCLog.m */,
+				5C1A986F62DB51995C1A2880A68891B4 /* KTVHCMacro.h */,
+				E47C6428DC2882B0CEBD51465968A844 /* KTVHCPathTool.h */,
+				384EAAF7622497C5CEBA2AFA98EE5E9B /* KTVHCPathTool.m */,
+				2379C5954B3380D461848C9A4AAF2BD4 /* KTVHCRange.h */,
+				3F69C2DDDAD06E3BE25BB2A95F6D6ECC /* KTVHCRange.m */,
+				955ED3153AF40BF8DF0ED68DFEF726B9 /* KTVHCURLTool.h */,
+				171FF1E7A5ABEBA8351646DF7265D24C /* KTVHCURLTool.m */,
+				A4120C9FF400BF535873ECA5DD68A9C8 /* KTVHTTPCache.h */,
+				56663482870A71151A9DBE4DF9706408 /* KTVHTTPCache.m */,
+				699AE13B58319BDA40C7EE93961CABC1 /* Support Files */,
+			);
+			name = KTVHTTPCache;
+			path = KTVHTTPCache;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01E0A93E4EF1FCDDF9961FFA05C82718 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				749E52476C53BAF16EA42077E36D56C7 /* DDData.h in Headers */,
+				613D26CC71EF72E9183B37712E19262D /* DDNumber.h in Headers */,
+				995D31C6DFA5866E793D45DF278DF6A1 /* DDRange.h in Headers */,
+				CB6DFEE4224792D74AAFB0C7A4D0D8BB /* HTTPAsyncFileResponse.h in Headers */,
+				2F670DAD06570984368BBACC2B3775F3 /* HTTPAuthenticationRequest.h in Headers */,
+				425964E52DEFDE79DC0CA48820A2DB8C /* HTTPConnection.h in Headers */,
+				D102274D4E9AE721E293C40E3C97536B /* HTTPDataResponse.h in Headers */,
+				10259787898D21B5E80678E51FE06F4D /* HTTPDynamicFileResponse.h in Headers */,
+				757480D8A6B8E2F521E1EF996DAC6C93 /* HTTPErrorResponse.h in Headers */,
+				2F249DE1D8C7FA2DD4C546AFA29CA017 /* HTTPFileResponse.h in Headers */,
+				E6DA7CCEE6E50F26476B7ABE9742170F /* HTTPLogging.h in Headers */,
+				3D289A55303853C457D58ECD182B8352 /* HTTPMessage.h in Headers */,
+				B5E62787ECF5E56F12AECBA03E0FC642 /* HTTPRedirectResponse.h in Headers */,
+				194A081D0DD066AB4B606A7D535E4D5E /* HTTPResponse.h in Headers */,
+				B1DC8B7976A2CFAF9682F2FDD6669413 /* HTTPServer.h in Headers */,
+				21965B49BFF0A76EC034AD7223F6AC70 /* KTVCocoaHTTPServer-umbrella.h in Headers */,
+				197DBD49A4494538CC2473E0C36EE17E /* KTVCocoaHTTPServer.h in Headers */,
+				7009BC257100031E9C2A3F066FB71E75 /* MultipartFormDataParser.h in Headers */,
+				47AAC6200037F75C251F613BE7E8BE70 /* MultipartMessageHeader.h in Headers */,
+				BB64056EC864CEC0681F62419229F06A /* MultipartMessageHeaderField.h in Headers */,
+				62997BC008BC1F4DF656BAABF6402280 /* WebSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1F953F98198C6A5857EB2738C50E0AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B46E3BEEAD65C4976F42990C6EB774B /* Pods-HellowWorld-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A0E46208D7FB57E68D23B279157692 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E50FFA64E0A07D4FFA694267BD7182A /* KTVHCData+Internal.h in Headers */,
+				77D67228470C5DEB87A7C8844F97337A /* KTVHCDataCacheItem.h in Headers */,
+				6254A720C00353F8B8DC0DD38D1EC98A /* KTVHCDataCacheItemZone.h in Headers */,
+				6932BDCED472EF636631DC89586838D4 /* KTVHCDataCallback.h in Headers */,
+				CE5F3A237787B8378E65367C1FEC4BE8 /* KTVHCDataFileSource.h in Headers */,
+				A4FA0F620C6C585055BC13A63CED9F0B /* KTVHCDataLoader.h in Headers */,
+				D8EC525486D4F2853B4BFF26C26B01A4 /* KTVHCDataNetworkSource.h in Headers */,
+				EE8B02231B88AF9CE1CA9B4C320D169A /* KTVHCDataReader.h in Headers */,
+				A0339D2714841FA1FC530C90D6551362 /* KTVHCDataRequest.h in Headers */,
+				AFD8CA1C6A4D26B47BFB3AEBF30A9675 /* KTVHCDataResponse.h in Headers */,
+				DE4DC0B1902EDCCB1DA98EBDF5BEEAE1 /* KTVHCDataSource.h in Headers */,
+				8CDB4443FD3B66593EDAF040F7E77E55 /* KTVHCDataSourceManager.h in Headers */,
+				71882C48EA2DABBF963AC4C4865B6BDB /* KTVHCDataStorage.h in Headers */,
+				2E7580B082BD60D4838F5C78F79FBBAF /* KTVHCDataUnit.h in Headers */,
+				5439CD332E2533A9B8EA98E15FF227B0 /* KTVHCDataUnitItem.h in Headers */,
+				5F5B41B4899551C4EA277A8A3CB09209 /* KTVHCDataUnitPool.h in Headers */,
+				9BCFE8744D6FB50E7B923B4A7FC22E82 /* KTVHCDataUnitQueue.h in Headers */,
+				EDE6E749BE62E422196320902EF45E2A /* KTVHCDownload.h in Headers */,
+				E6DF60337107C09DE62776969FD5C3CE /* KTVHCError.h in Headers */,
+				0BD2277B417A31A135C45AF3111DFC44 /* KTVHCHTTPConnection.h in Headers */,
+				088176D23069912CBEC0CE101EB962C6 /* KTVHCHTTPHeader.h in Headers */,
+				7452BC3202288FB0D62304EA02EBFEE6 /* KTVHCHTTPResponse.h in Headers */,
+				5C99983D8280E2AE13DD93544F90D5D5 /* KTVHCHTTPServer.h in Headers */,
+				B95978A56748F2E00AE8D3EDEABB6A4B /* KTVHCLog.h in Headers */,
+				A88D0A7523C4F50E7DC2A1450B405A99 /* KTVHCMacro.h in Headers */,
+				AC4956D57CC41EBACD2CC7BEA2D6F3D6 /* KTVHCPathTool.h in Headers */,
+				02B6EBF6652A808AE41ED23D022BEC1A /* KTVHCRange.h in Headers */,
+				9C73C2BABE31175DFF1938102998E03B /* KTVHCURLTool.h in Headers */,
+				3136C8EE5F45535AC581C196669D608F /* KTVHTTPCache-umbrella.h in Headers */,
+				8266089BD0F67B38229A649E44FC5C9D /* KTVHTTPCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		105186B500AA09A533997F3D16DF7B9E /* KTVCocoaHTTPServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4591DA5B71C4EDD22AA10876F86F87 /* Build configuration list for PBXNativeTarget "KTVCocoaHTTPServer" */;
+			buildPhases = (
+				01E0A93E4EF1FCDDF9961FFA05C82718 /* Headers */,
+				5B37550CA9A6BE9846F5187281ED0FC0 /* Sources */,
+				8E38471EDD2C8303A904A0B445B3E632 /* Frameworks */,
+				4D389F7D357E191DD19F79C88293EA9F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1480F6D459D70448839B5A2D08700D8 /* PBXTargetDependency */,
+			);
+			name = KTVCocoaHTTPServer;
+			productName = KTVCocoaHTTPServer;
+			productReference = 56A1E5CD0A9E0017839C4C79B740876A /* KTVCocoaHTTPServer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4C7E0F550F32C1273439F7A6B9D181A6 /* Pods-HellowWorld */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FCF3541F961D79BDAF42D228637FEB5 /* Build configuration list for PBXNativeTarget "Pods-HellowWorld" */;
+			buildPhases = (
+				C1F953F98198C6A5857EB2738C50E0AC /* Headers */,
+				6CCED3372528FD35A50191587BF1A955 /* Sources */,
+				87026C89861C0427DAE3B962310A156D /* Frameworks */,
+				ED2BE18C13A59F59F4A0AE27C3862C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A3799431ACF4F8D60F6B45ABD6E10A /* PBXTargetDependency */,
+				86D5596310DC725B5405A778965EAC9D /* PBXTargetDependency */,
+				A102E835CCAD8E3BBFA4962ED69B9039 /* PBXTargetDependency */,
+			);
+			name = "Pods-HellowWorld";
+			productName = "Pods-HellowWorld";
+			productReference = FC083B133AC65D37B5CDF76C32DF209A /* Pods_HellowWorld.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				398D9830C2C4A6872C9EEC588214E124 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8CA0CD098B97A1205DEA694FA044A1C2 /* KTVHTTPCache */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE0337BBC8E4E6F421B24C27FF5B4879 /* Build configuration list for PBXNativeTarget "KTVHTTPCache" */;
+			buildPhases = (
+				D4A0E46208D7FB57E68D23B279157692 /* Headers */,
+				59AD12E815CBA1F67D9A5FEB0BF96064 /* Sources */,
+				159B78ACAFC4C9E7DB00193E1715E793 /* Frameworks */,
+				2AF542048880C94962C7F3D586FA89CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB8FAB9DFC0004966F1089AE419CF42 /* PBXTargetDependency */,
+			);
+			name = KTVHTTPCache;
+			productName = KTVHTTPCache;
+			productReference = 25BB7D389AA57F912B6D70E4FEB7FE16 /* KTVHTTPCache.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 3DD52E2A4C8A14479475AB79C8764EAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				105186B500AA09A533997F3D16DF7B9E /* KTVCocoaHTTPServer */,
+				8CA0CD098B97A1205DEA694FA044A1C2 /* KTVHTTPCache */,
+				4C7E0F550F32C1273439F7A6B9D181A6 /* Pods-HellowWorld */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AF542048880C94962C7F3D586FA89CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D389F7D357E191DD19F79C88293EA9F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED2BE18C13A59F59F4A0AE27C3862C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		398D9830C2C4A6872C9EEC588214E124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */,
+				ACCDDA869B3B799BCA004BBC35D4255F /* GCDAsyncSocket.m in Sources */,
+				99F27F32A9154EB15C99BA8781628BEA /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59AD12E815CBA1F67D9A5FEB0BF96064 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F0FF5BDA202E9091C4F07C921460404 /* KTVHCDataCacheItem.m in Sources */,
+				3AF8B2FA8441AFD54E97D987ED703EAF /* KTVHCDataCacheItemZone.m in Sources */,
+				FF879150E676033776CDD6010669CC89 /* KTVHCDataCallback.m in Sources */,
+				2757AD0F23A4DF598BCF5AB1922458DA /* KTVHCDataFileSource.m in Sources */,
+				00D6656207A03BFD6E791F18FFB24141 /* KTVHCDataLoader.m in Sources */,
+				66CE3AFF84B851F1D27889129F6D2A06 /* KTVHCDataNetworkSource.m in Sources */,
+				FAA91B7A9A92AA10788E1A8506A594EE /* KTVHCDataReader.m in Sources */,
+				4371B149000D1A2A84AB43F6BBA8630E /* KTVHCDataRequest.m in Sources */,
+				7ABD948B612A258AC9CDB36467E5372E /* KTVHCDataResponse.m in Sources */,
+				20915EDBF4431708CA18C66D4F977934 /* KTVHCDataSourceManager.m in Sources */,
+				CBB3B5C7FA4A98B606DD955B5A2D6DC0 /* KTVHCDataStorage.m in Sources */,
+				CE53C63C64041466F3EF18F276E2747E /* KTVHCDataUnit.m in Sources */,
+				34897D3CF5ED08039CDDC00A7425BB1C /* KTVHCDataUnitItem.m in Sources */,
+				054029F64BFD7430B7337FC4D5DAA008 /* KTVHCDataUnitPool.m in Sources */,
+				906FE133DE41FD16A1D19F72CEF9A4A8 /* KTVHCDataUnitQueue.m in Sources */,
+				98D071657FB32154D3F8E0EFE8961DF5 /* KTVHCDownload.m in Sources */,
+				6F28BFDF97EAF5057618B139BFB27C55 /* KTVHCError.m in Sources */,
+				94CB0E9C1461DCDE5AF263AD6B6A7D0B /* KTVHCHTTPConnection.m in Sources */,
+				2EAC9719048EE1D2A2ECB8F4C41F99C9 /* KTVHCHTTPResponse.m in Sources */,
+				4F23B48B01660DE8318E0179D2DE2157 /* KTVHCHTTPServer.m in Sources */,
+				272439773093B3847ED47CA7000CCCC1 /* KTVHCLog.m in Sources */,
+				EB7D2F762567AF4274BF010BC4D82AF5 /* KTVHCPathTool.m in Sources */,
+				9E759C2A257DCF6510599CFC50BD3084 /* KTVHCRange.m in Sources */,
+				77C50D88335FD835D6DB0ECC722F484B /* KTVHCURLTool.m in Sources */,
+				C64E5D5D1191DE623D6FBB22FD284E24 /* KTVHTTPCache-dummy.m in Sources */,
+				0D7305696FA22F0E1C0C66A1470E0904 /* KTVHTTPCache.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B37550CA9A6BE9846F5187281ED0FC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989E929DE7DC601BBCBE7E316DDD691D /* DDData.m in Sources */,
+				64E9A47B44C4AD783AEDE95AB53FD1D7 /* DDNumber.m in Sources */,
+				EFF801C57476EF7268E900D72D477C72 /* DDRange.m in Sources */,
+				A74E3DCD0C7C88E8F2A3A13510A1A098 /* HTTPAsyncFileResponse.m in Sources */,
+				BF67AEC892B5C2F1411297838071AFF5 /* HTTPAuthenticationRequest.m in Sources */,
+				99FA87D2DF8B7A494B3E56B4D6985A65 /* HTTPConnection.m in Sources */,
+				B61055390E9D04153FFA0BB3139C21D7 /* HTTPDataResponse.m in Sources */,
+				21B14B6866430A6E7226A2E9172963FF /* HTTPDynamicFileResponse.m in Sources */,
+				754FF74E0FBDB59B440CB4B23DA11EEC /* HTTPErrorResponse.m in Sources */,
+				7830D167022FAF998CDF150CC5013305 /* HTTPFileResponse.m in Sources */,
+				38047BF1BEE849A4EF7C11D15F1F2FD1 /* HTTPLogging.m in Sources */,
+				5CF38CE3EA0EC06B0ED89C9F17DF6C27 /* HTTPMessage.m in Sources */,
+				96EBCC42C9BED9A39A778B847D0A6B4C /* HTTPRedirectResponse.m in Sources */,
+				859B25FA98044B9C7A6476E87DF56291 /* HTTPServer.m in Sources */,
+				EBED46238C953E808FEF4A785F33FC0C /* KTVCocoaHTTPServer-dummy.m in Sources */,
+				7FF5154E07BCF016D2F2300091965BB4 /* MultipartFormDataParser.m in Sources */,
+				3C5F8AFD96B04BEB560A9456169E4D76 /* MultipartMessageHeader.m in Sources */,
+				FDEC7674C9843032DA03F51FEB90154D /* MultipartMessageHeaderField.m in Sources */,
+				E04FB7C4CA5AE5536DB34841A7D7DEF6 /* WebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CCED3372528FD35A50191587BF1A955 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2133A8EA45FE3A5363DD5A560CAF6441 /* Pods-HellowWorld-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A3799431ACF4F8D60F6B45ABD6E10A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 75BD5C92FF99EF7201D6FD1E54653001 /* PBXContainerItemProxy */;
+		};
+		86D5596310DC725B5405A778965EAC9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KTVCocoaHTTPServer;
+			target = 105186B500AA09A533997F3D16DF7B9E /* KTVCocoaHTTPServer */;
+			targetProxy = 3AA0F8E93E50709598C9C55F21F9EBBC /* PBXContainerItemProxy */;
+		};
+		A102E835CCAD8E3BBFA4962ED69B9039 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KTVHTTPCache;
+			target = 8CA0CD098B97A1205DEA694FA044A1C2 /* KTVHTTPCache */;
+			targetProxy = C079D350343C9514FDCA83B3CC6201B8 /* PBXContainerItemProxy */;
+		};
+		D1480F6D459D70448839B5A2D08700D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 5A640F158DE188C29596FA91216304E8 /* PBXContainerItemProxy */;
+		};
+		DCB8FAB9DFC0004966F1089AE419CF42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KTVCocoaHTTPServer;
+			target = 105186B500AA09A533997F3D16DF7B9E /* KTVCocoaHTTPServer */;
+			targetProxy = 7F8C73CE6A4DF6A9F2FF5BE303196A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10B5460AFA30B1C311A7E7A678A2225B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC32A0B40392D039FCF0AAFBA4152F8 /* KTVHTTPCache.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTVHTTPCache/KTVHTTPCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTVHTTPCache/KTVHTTPCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KTVHTTPCache/KTVHTTPCache.modulemap";
+				PRODUCT_MODULE_NAME = KTVHTTPCache;
+				PRODUCT_NAME = KTVHTTPCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		12C61406389D53568AE425B9BF600962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB6C19FE0DD664F9FB4D49E2068974E /* KTVCocoaHTTPServer.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer.modulemap";
+				PRODUCT_MODULE_NAME = KTVCocoaHTTPServer;
+				PRODUCT_NAME = KTVCocoaHTTPServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CF32F31BF693D625D713BC4994DE2E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6822F5C862C6209BCAC8CA238B2555E3 /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3B1C4A64A01BDD5F57684B48FEA9EA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3886CC428E07244C20934E0E94B9C02A /* KTVHTTPCache.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTVHTTPCache/KTVHTTPCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTVHTTPCache/KTVHTTPCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KTVHTTPCache/KTVHTTPCache.modulemap";
+				PRODUCT_MODULE_NAME = KTVHTTPCache;
+				PRODUCT_NAME = KTVHTTPCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E60D82DEDBD727FD48D6329AA1B4B99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ACF42F9AEDFAE565E25AD4F7F8F566F /* KTVCocoaHTTPServer.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer.modulemap";
+				PRODUCT_MODULE_NAME = KTVCocoaHTTPServer;
+				PRODUCT_NAME = KTVCocoaHTTPServer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		54E511466B8BDF57CDA738FDF703DE32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09E7A2D4F8C630013E59EBCDC86E792 /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		BCF65E231464C74A7AB994787138E906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF16D949D6DAA07F83956F1A606F911B /* Pods-HellowWorld.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HellowWorld/Pods-HellowWorld-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HellowWorld/Pods-HellowWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E78FA0BBF3B423D0DCD90214A628C0CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1434798FB6C3E2E0D0CFACF0132D3F /* Pods-HellowWorld.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HellowWorld/Pods-HellowWorld-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HellowWorld/Pods-HellowWorld.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4591DA5B71C4EDD22AA10876F86F87 /* Build configuration list for PBXNativeTarget "KTVCocoaHTTPServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C61406389D53568AE425B9BF600962 /* Debug */,
+				4E60D82DEDBD727FD48D6329AA1B4B99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FCF3541F961D79BDAF42D228637FEB5 /* Build configuration list for PBXNativeTarget "Pods-HellowWorld" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCF65E231464C74A7AB994787138E906 /* Debug */,
+				E78FA0BBF3B423D0DCD90214A628C0CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E511466B8BDF57CDA738FDF703DE32 /* Debug */,
+				1CF32F31BF693D625D713BC4994DE2E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0337BBC8E4E6F421B24C27FF5B4879 /* Build configuration list for PBXNativeTarget "KTVHTTPCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10B5460AFA30B1C311A7E7A678A2225B /* Debug */,
+				3B1C4A64A01BDD5F57684B48FEA9EA38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
